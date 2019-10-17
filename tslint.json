@@ -1,0 +1,65 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended",
+      "tslint-eslint-rules"
+  ],
+  "rulesDirectory": [
+      "node_modules/tslint-eslint-rules/dist/rules",
+      "node_modules/tslint-microsoft-contrib"
+  ],
+  "linterOptions": {
+      "exclude": [
+          "node_modules/**"
+      ]
+  },
+  "rules": {
+      "indent": [
+          true,
+          "spaces",
+          4
+      ],
+      "interface-name": [
+          true,
+          "always-prefix"
+      ],
+      "quotemark": [
+          true,
+          "single",
+          "avoid-escape"
+      ],
+      "semicolon": [
+          true,
+          "never"
+      ],
+      "arrow-parens": [
+          true,
+          "ban-single-arg-parens"
+      ],
+      "radix": false,
+      "no-unused-expression": true,
+      "object-literal-sort-keys": false,
+      "object-curly-spacing": [
+          true,
+          "always"
+      ],
+      "whitespace": [
+          true,
+          "check-module",
+          "check-branch",
+          "check-decl",
+          "check-separator",
+          "check-preblock"
+      ],
+      "mocha-avoid-only": true,
+      "ter-indent": [
+          true,
+          4,
+          {
+              "MemberExpression": 1,
+              "SwitchCase": 1
+          }
+      ],
+      "no-floating-promises": true
+  }
+}

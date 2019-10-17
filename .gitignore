@@ -1,0 +1,10 @@
+.env
+dist
+node_modules
+data
+firebase-config.json
+
+.secrets
+
+!/data/all-urls-v1.csv
+!/data/output-2019-07-10T09:43:16-export-top-5000.csv
